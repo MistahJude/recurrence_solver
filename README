@@ -1,0 +1,43 @@
+# Recurrence Solver
+
+## Overview
+
+**Recurrence Solver** is a C program that computes the value of a specific recurrence relation using three methods: non-recursive (iterative), recursive, and closed-form solution.
+
+## Recurrence Relation
+
+\[ T(n) = 4 \cdot T(n-1) - 3 \cdot T(n-2) + 4 \]
+with initial values:
+\[ T(0) = 1 \]
+\[ T(1) = 3 \]
+
+Closed-form solution:
+\[ T(n) = 2 \cdot 3^n - 2n - 1 \]
+
+## Usage
+
+1. **Compile the Program**:
+    ```sh
+    gcc -o recurrence_solver recurrence_solver.c
+    ```
+
+2. **Run the Program**:
+    ```sh
+    ./recurrence_solver
+    ```
+
+3. **Input the Value for `n`**:
+    - Example: `Input the value for N: 5`
+
+4. **View the Results**:
+    - Example output:
+      ```
+      The Non-Recursive Function: 485
+      The Recursive Function: 485
+      The Closed-Form Function: 485
+      All methods produce the same result.
+      ```
+
+## Author
+
+[MistahJude]
